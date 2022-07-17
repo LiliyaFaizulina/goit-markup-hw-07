@@ -498,6 +498,10 @@ input[type=checkbox] {
   letter-spacing: 0.03em;
 }
 
+.portfolio {
+  background-color: #ffffff;
+}
+
 .filter {
   display: flex;
   align-items: center;
