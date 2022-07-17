@@ -1,0 +1,73 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background-color: getBgColor('primary');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform $transitionDuration $timingFunction;
+
+  .backdrop--is-hidden & {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.modal__text {
+  margin-bottom: 12px;
+
+  @include textStyle(map-get($colors, 'title'), 20px, calc(23 / 20));
+  font-weight: 700;
+  text-align: center;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 12px;
+}
+
+.agreement__icon {
+  @extend %icon;
+  margin-right: 8px;
+  border: 2px solid map-get($colors, 'title');
+  border-radius: 2px;
+
+  background-color: getBgColor('primary');
+
+  .agreement__checkbox:checked + & {
+    background-color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.agreement__link {
+  color: $accentColor;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+
+  transition: background-color $transitionDuration $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: getBgColor('hoverBtn');
+  }
+}

@@ -24,6 +24,7 @@ $bgColors: (
   'footer': #2f303a,
   'overlay': rgba(33, 150, 243, 0.9),
   'icons': rgba(255, 255, 255, 0.1),
+  'hoverBtn': #188ce8,
 );
 
 @function getBgColor($key) {
