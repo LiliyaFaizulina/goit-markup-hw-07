@@ -1,0 +1,29 @@
+.logo {
+  color: $accentColor;
+  font-family: $logoFontFamily, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__item {
+  .header & {
+    color: map-get($colors, 'logo');
+  }
+}
+
+.logo__item {
+  .footer & {
+    color: map-get($colors, 'lightText');
+  }
+}

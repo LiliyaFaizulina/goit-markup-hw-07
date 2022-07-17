@@ -1,0 +1,144 @@
+.navigation__list, .contacts, .navigation,
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__link, .navigation__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover, .navigation__link:hover, .contacts__link:focus, .navigation__link:focus {
+  color: #2196f3;
+}
+
+.contacts__icon {
+  display: block;
+  align-self: center;
+  fill: currentColor;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.header .logo__item {
+  color: #000000;
+}
+
+.footer .logo__item {
+  color: #ffffff;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.contacts {
+  gap: 30px;
+  margin-left: auto;
+}
+
+.navigation__list {
+  gap: 50px;
+}
+
+.navigation__link {
+  display: block;
+  color: #212121;
+}
+
+.contacts__link {
+  display: flex;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+}
+
+.navigation__link--current {
+  position: relative;
+}
+.navigation__link--current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}/*# sourceMappingURL=main.css.map */
