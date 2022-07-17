@@ -5,17 +5,17 @@
 
 .navigation,
 .header__container {
-  @extend %flexbox;
+  @include flexBox();
 }
 
 .contacts {
-  @extend %flexbox;
+  @include flexBox();
   gap: 30px;
   margin-left: auto;
 }
 
 .navigation__list {
-  @extend %flexbox;
+  @include flexBox();
   gap: 50px;
 }
 
@@ -37,6 +37,7 @@
 
 .navigation__link--current {
   position: relative;
+  color: $accentColor;
 
   &::after {
     content: '';
