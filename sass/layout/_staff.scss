@@ -27,11 +27,8 @@
 .staff__name {
   margin-bottom: 10px;
 
-  color: map-get($colors, 'title');
+  @include textStyle(map-get($colors, 'title'), $primaryFontSize, calc(19 / 16));
   font-weight: 500;
-  font-size: $primaryFontSize;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
 }
 
 .staff__position {

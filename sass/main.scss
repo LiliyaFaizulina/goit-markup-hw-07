@@ -1,11 +1,12 @@
 @import './utils/vars';
 @import './base/reset';
-@import './utils/plholders';
-@import './utils/mixin';
+@import './utils/mixins';
+@import './utils/placeholders';
 @import './components/logo';
 @import './components/buttons';
 @import './components/inputs';
 @import './components/socials';
+@import './components/contacts';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/benefits';

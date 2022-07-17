@@ -18,10 +18,7 @@
 }
 
 .benefits__title {
-  color: map-get($colors, 'title');
-  font-size: inherit;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+  @include textStyle(map-get($colors, 'title'), inherit, calc(16 / 14));
   text-transform: uppercase;
 }
 

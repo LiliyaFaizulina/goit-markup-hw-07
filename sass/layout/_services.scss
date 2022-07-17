@@ -26,10 +26,7 @@
   width: 100%;
 
   background-color: getBgColor('services');
-  color: map-get($colors, 'lightText');
+  @include textStyle(map-get($colors, 'lightText'), inherit, calc(16 / 14));
   text-align: center;
-  font-size: inherit;
-  line-height: calc(16 / 14);
   text-transform: uppercase;
-  letter-spacing: 0.03em;
 }
