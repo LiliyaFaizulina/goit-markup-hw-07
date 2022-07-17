@@ -6,7 +6,7 @@
 
 .benefits__list {
   @include flexBox();
-  gap: 30px;
+  gap: $primaryGap;
 }
 
 .benefits__wrapper {

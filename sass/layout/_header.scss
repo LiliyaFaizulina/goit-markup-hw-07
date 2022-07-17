@@ -10,7 +10,7 @@
 
 .contacts {
   @include flexBox();
-  gap: 30px;
+  gap: $primaryGap;
   margin-left: auto;
 }
 
