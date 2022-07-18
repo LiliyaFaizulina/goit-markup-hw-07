@@ -4,7 +4,11 @@
   gap: 30px;
 }
 
-.project__item {
+.project__link {
+  display: block;
+}
+
+.project__link {
   transition: box-shadow $transitionDuration $timingFunction;
 
   &:hover,
@@ -39,8 +43,8 @@
   transition: transform $transitionDuration $timingFunction,
     opacity $transitionDuration $timingFunction;
 
-  .project__item:hover &,
-  .project__item:focus & {
+  .project__link:hover &,
+  .project__link:focus & {
     transform: translateY(0);
     opacity: 1;
   }
