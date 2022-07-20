@@ -35,15 +35,16 @@
 }
 
 .agreement {
-  display: flex;
-  align-items: center;
+  @include flexBox();
   margin-bottom: 30px;
-  padding-left: 12px;
+  gap: 7px;
+
+  line-height: calc(24 / 14);
 }
 
 .agreement__icon {
   @extend %icon;
-  margin-right: 8px;
+
   border: 2px solid map-get($colors, 'title');
   border-radius: 2px;
 
@@ -53,6 +54,10 @@
     background-color: $accentColor;
     border-color: $accentColor;
   }
+}
+
+.agreement__text {
+  user-select: none;
 }
 
 .agreement__link {

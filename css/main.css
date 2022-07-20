@@ -171,7 +171,7 @@ address {
 
 .close-btn {
   display: block;
-  padding: 6px;
+  padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
@@ -608,6 +608,10 @@ address {
   pointer-events: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -644,12 +648,13 @@ address {
 .agreement {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding-left: 12px;
+  gap: 7px;
+  line-height: 1.7142857143;
 }
 
 .agreement__icon {
-  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
   background-color: #ffffff;
@@ -657,6 +662,10 @@ address {
 .agreement__checkbox:checked + .agreement__icon {
   background-color: #2196f3;
   border-color: #2196f3;
+}
+
+.agreement__text {
+  user-select: none;
 }
 
 .agreement__link {
@@ -674,7 +683,7 @@ address {
 }
 
 .form__label {
-  display: inline-block;
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
