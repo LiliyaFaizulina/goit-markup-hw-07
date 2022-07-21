@@ -36,10 +36,13 @@
 
 .agreement {
   @include flexBox();
-  margin-bottom: 30px;
   gap: 7px;
 
   line-height: calc(24 / 14);
+}
+
+.form__agreement {
+  margin-bottom: 30px;
 }
 
 .agreement__icon {

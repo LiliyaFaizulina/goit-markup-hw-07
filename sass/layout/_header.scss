@@ -11,6 +11,9 @@
 .contacts {
   @include flexBox();
   gap: $primaryGap;
+}
+
+.header__contacts {
   margin-left: auto;
 }
 

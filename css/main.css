@@ -118,11 +118,11 @@ address {
   margin-bottom: 20px;
 }
 
-.header .logo__item {
+.logo__item--dark {
   color: #000000;
 }
 
-.footer .logo__item {
+.logo__item--light {
   color: #ffffff;
 }
 
@@ -253,6 +253,9 @@ address {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.header__contacts {
   margin-left: auto;
 }
 
@@ -520,6 +523,9 @@ address {
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+
+.portfolio__filter {
   margin-bottom: 50px;
 }
 
@@ -649,9 +655,12 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
   gap: 7px;
   line-height: 1.7142857143;
+}
+
+.form__agreement {
+  margin-bottom: 30px;
 }
 
 .agreement__icon {
